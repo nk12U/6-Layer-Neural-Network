@@ -83,9 +83,7 @@ int main(int argc, char *argv[])
     float *A = malloc(sizeof(float) * 784 * 10);
     float *b = malloc(sizeof(float) * 10);
     float *x = load_mnist_bmp(argv[2]);
-    int flag = load(argv[1], 10, 784, A, b);
-    if (flag == 1)
-        return 0;
+    load(argv[1], 10, 784, A, b);
     int inference = inference3(A, b, x, y);
     printf("\nThis number is infered to be %d.\n\n", inference);
     free(y);

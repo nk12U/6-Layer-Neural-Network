@@ -242,62 +242,7 @@ int main(int argc, char *argv[])
     int height = -1;
     load_mnist(&train_x, &train_y, &train_count, &test_x, &test_y, &test_count, &width, &height);
     srand(time(NULL));
-/* 浮動小数点例外で停止することを確認するためのコード */
-#if 0
-  volatile float x = 0;
-  volatile float y = 0;
-  volatile float z = x/y;
-#endif
-    // これ以降，３層NN の係数 A_784x10 および b_784x10 と，
-    // 訓練データ train_x + 784*i (i=0,...,train_count-1), train_y[0]～train_y[train_count-1],
-    // テストデータ test_x + 784*i (i=0,...,test_count-1), test_y[0]～test_y[test_count-1],
-    // を使用することができる．
-    /*
-    fc(10, 784, train_x, A_784x10, b_784x10, y);
-    relu(10, y, y);
-    softmax(10, y, y);
-    print(1, 10, y);
-    */
-    //ここまでで補題~4
-    /*
-    int ans = inference3(A_784x10, b_784x10, train_x);
-    printf("%d %d\n", ans, train_y[0]);
-    */
-    //ここまでで補題5
-    /*
-    int i = 0;
-    save_mnist_bmp(train_x + 784*1, "train_%05d.bmp", i);
-    */
-    //ここまでで補題6
-    /*
-    int sum = 0;
-    float* y = malloc(sizeof(float) * 10);
-    for (int i = 0; i < test_count; i++)
-    {
-        if(inference3(A_784x10, b_784x10, test_x + i * width * height, y, y) == test_y[i])
-          sum++;
-    }
-    printf("%f%%\n", sum * 100.0 / test_count);
-    */
-    //ここまでで補題7
-    /*
-    float *y = malloc(sizeof(float) * 10);
-    float *dEdA = malloc(sizeof(float) * 784 * 10);
-    float *dEdb = malloc(sizeof(float) * 10);
-    backward3(A_784x10, b_784x10, train_x + 784 * 8, train_y[8], y, dEdA, dEdb);
-    print(10, 784, dEdA);
-    print(1, 10, dEdb);
-    */
-    //ここまでで補題11
-    /*
-    int* index = malloc(sizeof(int) * train_count);
-    for (int i = 0; i < train_count; i++)
-    {
-        index[i] = i;
-    }
-    shuffle(train_count, index);
-    */
-    //ここまでで補題12
+
     //必要なメモリ確保
     float *y = malloc(sizeof(float) * 10);
     float *A = malloc(sizeof(float) * 784 * 10);
