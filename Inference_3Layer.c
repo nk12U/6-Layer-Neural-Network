@@ -67,10 +67,10 @@ void load(const char *filename, int m, int n, float *A, float *b)
 {
     FILE *fp;
     // Aはm行n列の行列、bはm行の列ベクトル
-    //バイナリファイルなので注意！ rbを使う
+    // バイナリファイルなので注意！ rbを使う
     if ((fp = fopen(filename, "rb")) == NULL)
     {
-        printf("File cannot open.\n");
+        printf("File cannot be opened.\n");
         exit(1);
     }
     fread(A, sizeof(float), m * n, fp);
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
     float *x = load_mnist_bmp(argv[2]);
     load(argv[1], 10, 784, A, b);
     int inference = inference3(A, b, x, y);
-    printf("\nThis number is infered to be %d.\n\n", inference);
+    printf("This number is inferred to be %d.\n", inference);
     free(y);
     free(A);
     free(b);

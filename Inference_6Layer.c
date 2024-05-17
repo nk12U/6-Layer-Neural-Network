@@ -85,7 +85,7 @@ void load(const char *filename, int m, int n, float *A, float *b)
     FILE *fp;
     if ((fp = fopen(filename, "rb")) == NULL)
     {
-        printf("File cannot open.\n");
+        printf("File cannot be opened.\n");
         exit(1);
     }
     fread(A, sizeof(float), m * n, fp);
@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
     load(argv[2], 100, 50, A2, b2);
     load(argv[3], 10, 100, A3, b3);
     int inference = inference6(A1, b1, A2, b2, A3, b3, x, y);
-    printf("\nThis number is infered to be %d.\n\n", inference);
+    printf("This number is inferred to be %d.\n", inference);
     free(y);
     free(A1);
     free(b1);

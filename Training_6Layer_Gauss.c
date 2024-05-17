@@ -329,7 +329,7 @@ void save(const char *filename, int m, int n, const float *A, const float *b)
     FILE *fp;
     if ((fp = fopen(filename, "wb")) == NULL)
     {
-        printf("File cannot open.\n");
+        printf("File cannot be opened.\n");
         exit(1);
     }
     fwrite(A, sizeof(float), m * n, fp);
@@ -339,6 +339,10 @@ void save(const char *filename, int m, int n, const float *A, const float *b)
 }
 int main(int argc, char *argv[])
 {
+    // 実行時間計測
+    time_t start_time, end_time;
+    start_time = time(NULL);
+
     float *train_x = NULL;
     unsigned char *train_y = NULL;
     int train_count = -1;
@@ -377,7 +381,7 @@ int main(int argc, char *argv[])
     // 学習率を決める
     double learningrate = 0.1;
     printf("Epoch size: %7d\nMinibatch size: %2d\nLearning rate: %.2f\n", epoch, minibatchsize, learningrate);
-    printf("Calcurating...\n");
+    printf("Calculating...\n");
     // A, bを平均0、標準偏差sqrt(2.0/入力次数)の正規分布で初期化する
     gauss_init(784 * 50, A1);
     gauss_init(50, b1);
@@ -458,6 +462,11 @@ int main(int argc, char *argv[])
         if (sum * 100.0 / test_count >= 97.0)
             learningrate = 0.01;
     }
+    end_time = time(NULL);
+    int minutes = (end_time - start_time) / 60;
+    int seconds = (end_time - start_time) % 60;
+    printf("Execution time: %d minutes %d seconds\n", minutes, seconds);
+
     printf("Do you save? Y-0 N-1\n");
     int flag = 0;
     scanf("%d", &flag);
