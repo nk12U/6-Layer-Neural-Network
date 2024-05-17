@@ -1,9 +1,9 @@
-#Overview
+## Overview
 This is the course material about C Programming Ensyu and code.
 
-C Programming Ensyu is a speciallized subject of Kyoto University Electrical and Electronics Engineering.
+C Programming Ensyu is a speciallized subject of Kyoto University Undergraduate School of Electrical and Electronic Engineering.
 
-In this course students need to complete 6 Layer Neural Network, which is able to classify MNIST.
+In this course students need to complete 6 Layer Neural Network, which is able to classify MNIST dataset.
 
 ## Training Part
 for implementating 3Layer
