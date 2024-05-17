@@ -1,6 +1,8 @@
 #include "nn.h"
 #include "MT.h"
 #include <time.h>
+#define M_PI        3.14159265358979323846264338327950288
+
 void print(int m, int n, const float *x)
 {
     for (int i = 0; i < m; i++)
