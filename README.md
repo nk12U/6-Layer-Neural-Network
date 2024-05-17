@@ -5,6 +5,8 @@ C Programming Ensyu is a speciallized subject of Kyoto University Undergraduate 
 
 In this course students need to complete 6 Layer Neural Network, which is able to classify MNIST dataset.
 
+I just confirmed that this code was working on WSL2 and MinGW-w64, so this code may not work in Mac.
+
 ## Training Part
 for implementating 3Layer
 
