@@ -45,7 +45,7 @@ To implement 6Layer
 ```
 $ gcc Inference_6Layer.c -lm -Wall
 
-if you want to inference 0 by the trained model
+If you want to inference character 0 by the trained model.
 
 $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat default_0.bmp
 ```
