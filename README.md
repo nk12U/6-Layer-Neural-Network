@@ -16,10 +16,11 @@
 ```
 $ git clone https://github.com/nk12U/6-Layer-Neural-Network
 ```
+## Usage
 
-## Training
+### Training
 
-To implement 6Layer
+To implement 6 Layer Network
 
 ```
 $ gcc Training_6Layer_Gauss.c -lm -Wall
@@ -37,9 +38,9 @@ If you want to save the weight and bias.
 $ 0
 ```
 
-## Inference
+### Inference
 
-To implement 6Layer
+To implement 6 Layer Network
 
 ```
 $ gcc Inference_6Layer.c -lm -Wall
