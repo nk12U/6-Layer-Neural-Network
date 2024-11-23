@@ -33,7 +33,7 @@ $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat
 ```
 $ Do you save? Y-0 N-1
 
-if you want to save the weight and bias
+If you want to save the weight and bias.
 
 $ 0
 ```
