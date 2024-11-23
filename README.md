@@ -10,7 +10,7 @@ In this course, as the final assignment students need to complete 6 Layer Neural
 
 ## Neural Network Architecture
 
-<img src = "https://github.com/nk12U/Neural Network Architecture/blob/main/Neural Network Architecture.png">
+<img src = "https://github.com/nk12U/6-Layer-Neural-Network/blob/main/Neural Network Architecture.png">
 
 ## Environment
 
