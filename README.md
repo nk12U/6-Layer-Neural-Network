@@ -2,11 +2,8 @@
 
 ## Overview
 
-This is the course material about Exercise of Computer Programming in Electrical and Electronic Engineering.
-
-Exercise of Computer Programming in Electrical and Electronic Engineering is a speciallized subject of Kyoto University Undergraduate School of Electrical and Electronic Engineering.
-
-In this course, as the final assignment students need to complete 6 Layer Neural Network, which is able to classify MNIST dataset.
+This repository is 6 Layer Neural Network written in C, which classify MNIST dataset.  
+This is the final assignment of Exercise of Computer Programming in Electrical and Electronic Engineering at Kyoto University.
 
 ## Neural Network Architecture
 
@@ -36,9 +33,9 @@ $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat
 ```
 $ Do you save? Y-0 N-1
 
-if you want to save the weight
+if you want to save the weight and bias
 
-type 0
+$ 0
 ```
 
 ## Inference
@@ -55,5 +52,5 @@ $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat default_0.bmp
 
 ## Future work
 
-- Expand this code to Convolutional Neural Network.
+- Expand this code to Convolutional Neural Network and CIFAR-10 dataset.
 - CUDA Implementation
