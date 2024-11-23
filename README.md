@@ -42,6 +42,7 @@ if you want to inference 0 by the trained model
 $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat default_0.bmp
 ```
 
-## To do
+## Future work
 
-Expand this code to Convolutional Neural Network.
+- Expand this code to Convolutional Neural Network.
+- CUDA Implementation
