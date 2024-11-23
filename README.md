@@ -2,8 +2,7 @@
 
 ## Overview
 
-This repository is 6 Layer Neural Network written in C, which classify MNIST dataset.  
-This is the final assignment of Exercise of Computer Programming in Electrical and Electronic Engineering at Kyoto University.
+6 Layer Fully Connected Neural Network classify MNIST dataset.  
 
 ## Neural Network Architecture
 
