@@ -8,7 +8,14 @@ Exercise of Computer Programming in Electrical and Electronic Engineering is a s
 
 In this course, as the final assignment students need to complete 6 Layer Neural Network, which is able to classify MNIST dataset.
 
-I just confirmed that this code was working on WSL2 and MinGW-w64.
+## Neural Network Architecture
+
+<img src = "https://github.com/nk12U/Neural Network Architecture/blob/main/Neural Network Architecture.png">
+
+## Environment
+
+- [MinGW-w64](https://www.javadrive.jp/cstart/install/index6.html)
+- [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
 
 ## Training
 
@@ -23,7 +30,7 @@ $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat
 --Training is executing.--
 
 ```
-Do you save? Y-0 N-1
+$ Do you save? Y-0 N-1
 
 if you want to save the weight
 
