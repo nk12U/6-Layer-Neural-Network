@@ -2,9 +2,9 @@
 
 ## Overview
 
-6 Layer Fully Connected Neural Network classify MNIST dataset.  
+6 Layer Fully Connected Neural Network classifies MNIST dataset.  
 
-## Neural Network Architecture
+## Network Architecture
 
 <img src = "https://github.com/nk12U/6-Layer-Neural-Network/blob/main/Neural Network Architecture.png">
 
