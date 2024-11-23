@@ -1,3 +1,5 @@
+# 6-Layer-Neural-Network
+
 ## Overview
 
 This is the course material about Exercise of Computer Programming in Electrical and Electronic Engineering.
@@ -6,11 +8,11 @@ Exercise of Computer Programming in Electrical and Electronic Engineering is a s
 
 In this course, as the final assignment students need to complete 6 Layer Neural Network, which is able to classify MNIST dataset.
 
-I just confirmed that this code was working on WSL2 and MinGW-w64, so this code may not work in Mac.
+I just confirmed that this code was working on WSL2 and MinGW-w64.
 
 ## Training
 
-for implementating 6Layer
+To implement 6Layer
 
 ```
 $ gcc Training_6Layer_Gauss.c -lm -Wall
@@ -30,7 +32,7 @@ type 0
 
 ## Inference
 
-for implementating 6Layer
+To implement 6Layer
 
 ```
 $ gcc Inference_6Layer.c -lm -Wall
@@ -39,3 +41,7 @@ if you want to inference 0 by the trained model
 
 $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat default_0.bmp
 ```
+
+## To do
+
+Expand this code to Convolutional Neural Network.
