@@ -14,7 +14,7 @@
 - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
 
 ```
-$ git clone https://github.com/nk12U/6-Layer-Neural-Network
+$ git clone https://github.com/nk12U/6-Layer-Neural-Network.git
 ```
 ## Usage
 
@@ -52,5 +52,6 @@ $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat default_0.bmp
 
 ## Future work
 
+- Add Adam optimization 
 - Expand this code to Convolutional Neural Network and CIFAR-10 dataset.
 - CUDA Implementation
