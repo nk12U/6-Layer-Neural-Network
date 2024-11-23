@@ -52,6 +52,6 @@ $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat default_0.bmp
 
 ## Future work
 
-- Add Adam optimization 
-- Expand this code to Convolutional Neural Network and CIFAR-10 dataset.
+- Add Adam and Momentum optimization 
+- Expand this code to Convolutional Neural Network and CIFAR-10 dataset
 - CUDA Implementation
