@@ -51,7 +51,7 @@ If you want to inference character 0 by the trained model.
 $ ./a.out fc1_6Layer.dat fc2_6Layer.dat fc3_6Layer.dat default_0.bmp
 ```
 
-## Future work
+## Future Work
 
 - Add Adam and Momentum optimization 
 - Expand this code to Convolutional Neural Network and CIFAR-10 dataset
