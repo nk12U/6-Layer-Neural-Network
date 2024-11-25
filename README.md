@@ -10,13 +10,14 @@
 
 ## Environment
 
-- [MinGW-w64](https://www.javadrive.jp/cstart/install/index6.html)
 - [WSL2](https://learn.microsoft.com/ja-jp/windows/wsl/install)
+- [MinGW-w64](https://www.javadrive.jp/cstart/install/index6.html)
+
+## Command
 
 ```
 $ git clone https://github.com/nk12U/6-Layer-Neural-Network.git
 ```
-## Usage
 
 ### Training
 
